@@ -1,0 +1,596 @@
+
+/* Navigation Bar */
+.navbar {
+    background-color: #111116;
+    padding: 18px 0;
+    position: sticky;
+    z-index: 1000;
+    top:0;
+    border-bottom: 1px solid #80633D;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.navbar .navbar-brand {
+    color: #D6B477;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #F3D6A0;
+    margin-left: 15px;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+
+/* Welcome Section */
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(
+        rgba(15, 10, 15, 0.75),
+        rgba(15, 10, 15, 0.9)
+    ),
+    url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #F8F0E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+
+    border-bottom: 1px solid rgba(214,180,119,0.25);
+
+}
+
+.subtitle {
+    color: #D6B477;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    font-weight: bold;
+    color: #F3D6A0;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.wedding-date {
+    color: #D6B477;
+    margin-bottom: 30px;
+}
+
+.explore-btn {
+    background-color: #761F35;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #D6B477;
+    color: #171116;
+    transform: translateY(-3px);
+}
+
+
+/* Our Story Section */
+
+/* Our Story Section */
+.story-section {
+    background: linear-gradient(
+        135deg,
+        #4A192D,
+        #29121F 55%,
+        #3B1929
+    );
+
+    color: #FFF5E8;
+    padding: 100px 20px;
+    border-top: 2px solid #B8955A;
+    border-bottom: 2px solid #B8955A;
+}
+
+
+
+.section-subtitle {
+    color: #D6B477;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.story-section h2 {
+    color: #F3D6A0;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.story-intro {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    line-height: 1.8;
+    color: #D8CDD2;
+}
+
+/* Timeline */
+/* Timeline Background */
+
+/* Timeline */
+.story-timeline {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    background: transparent;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 0;
+}
+
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 45px 35px;
+    border-left: 2px solid #D6B477;
+}
+
+.timeline-item:last-child {
+    border-left-color: transparent;
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "♥";
+    position: absolute;
+    left: -13px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #D6B477;
+    color: #351321;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-date {
+    color: #D6B477;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.timeline-item h3 {
+    color: #F3D6A0;
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+
+.timeline-item p {
+    color: #F0DDE3;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+
+
+/* Our Memories Gallery */
+.gallery-section {
+    background: #171116;
+    color: #F8F0E3;
+    padding: 100px 20px;
+    border-bottom: 2px solid #B8955A;
+}
+
+.gallery-section h2 {
+    color: #F3D6A0;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.gallery-intro {
+    color: #E0CDD5;
+    max-width: 600px;
+    margin: 0 auto 45px;
+    line-height: 1.8;
+}
+
+
+/* Playful Polaroid Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px 25px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.polaroid {
+    background: #FFF8ED;
+    padding: 10px 10px 18px;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.polaroid p {
+    color: #54243A;
+    font-family: cursive;
+    font-size: 16px;
+    text-align: center;
+    margin: 14px 0 0;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.05) !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+/* Different photo angles */
+.photo-one { transform: rotate(-4deg); }
+.photo-two { transform: rotate(3deg); }
+.photo-three { transform: rotate(4deg); }
+.photo-four { transform: rotate(-3deg); }
+.photo-five { transform: rotate(2deg); }
+.photo-six { transform: rotate(-2deg); }
+.photo-seven { transform: rotate(4deg); }
+.photo-eight { transform: rotate(-4deg); }
+.photo-nine { transform: rotate(3deg); }
+.photo-ten { transform: rotate(-3deg); }
+.photo-eleven { transform: rotate(2deg); }
+
+/* Little love notes */
+.love-note {
+    background: #EAD6B8;
+    color: #54243A;
+    padding: 28px 16px;
+    text-align: center;
+    transform: rotate(3deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.love-note span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.love-note p {
+    font-family: cursive;
+    font-size: 19px;
+    margin: 15px 0 0;
+}
+
+.note-two {
+    transform: rotate(-4deg);
+}
+
+.polaroid img.special-photo {
+    object-fit: contain;
+    background-color: #29121F;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 15px;
+    }
+
+    .polaroid {
+        padding: 7px 7px 14px;
+    }
+
+    .polaroid img {
+        height: 210px;
+    }
+
+    .polaroid p {
+        font-size: 14px;
+    }
+
+    .love-note {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 12px;
+    }
+
+    .polaroid img {
+        height: 170px;
+    }
+
+    .love-note p {
+        font-size: 16px;
+    }
+}
+
+
+/* Our Song Section */
+.song-section {
+    background: linear-gradient(
+        135deg,
+        #29121F,
+        #171116,
+        #3B1929
+    );
+    color: #FFF5E8;
+    padding: 100px 20px;
+    border-bottom: 2px solid #B8955A;
+}
+
+.song-section h2 {
+    color: #F3D6A0;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.song-intro {
+    max-width: 550px;
+    margin: 0 auto 40px;
+    color: #E0CDD5;
+    line-height: 1.9;
+}
+
+.song-player {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 35px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #80633D;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.music-icon {
+    font-size: 55px;
+    color: #D6B477;
+    margin-bottom: 15px;
+}
+
+.song-player h3 {
+    color: #F3D6A0;
+    font-size: 24px;
+}
+
+.song-player p {
+    color: #E0CDD5;
+    margin-bottom: 25px;
+}
+
+.song-player audio {
+    width: 100%;
+}
+
+
+/* Our Letter Section */
+.letter-section {
+    background: linear-gradient(135deg, #171116, #29121F, #171116);
+    color: #FFF5E8;
+    padding: 100px 20px;
+    border-bottom: 2px solid #B8955A;
+}
+
+.letter-section h2 {
+    color: #F3D6A0;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.letter-intro {
+    max-width: 550px;
+    margin: 0 auto 35px;
+    color: #E0CDD5;
+    line-height: 1.9;
+}
+
+.reveal-button {
+    background: #D6B477;
+    color: #29121F;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reveal-button:hover {
+    background: #F3D6A0;
+    transform: scale(1.05);
+}
+
+.love-letter {
+    display: none;
+    max-width: 650px;
+    margin: 40px auto 0;
+    padding: 35px;
+    background: #FFF8ED;
+    color: #54243A;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    line-height: 1.9;
+}
+
+.love-letter h3 {
+    color: #8B2942;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.letter-signature {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Floating Hearts */
+.hearts-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -30px;
+    color: #D6B477;
+    opacity: 0;
+    animation: float-heart 8s linear forwards;
+}
+
+@keyframes float-heart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.65;
+    }
+
+    85% {
+        opacity: 0.65;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(35deg);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .floating-heart {
+        animation: none;
+        display: none;
+    }
+}
+
+
+/* Grand Finale */
+.forever-section {
+    background: linear-gradient(135deg, #110D12, #29121F, #171116);
+    color: #FFF5E8;
+    padding: 100px 20px;
+    border-top: 1px solid #80633D;
+}
+
+.forever-section h2 {
+    color: #F3D6A0;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.forever-intro {
+    color: #E0CDD5;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.final-letter {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 35px;
+    background: rgba(255, 248, 237, 0.97);
+    color: #54243A;
+    border: 1px solid #D6B477;
+    border-radius: 14px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+    text-align: left;
+    line-height: 2;
+}
+
+.final-letter p {
+    margin-bottom: 24px;
+}
+
+.final-signature {
+    text-align: right;
+    font-weight: bold;
+    color: #8B2942;
+}
+
+.forever-ending {
+    color: #D6B477;
+    margin-top: 45px;
+    font-size: clamp(26px, 4vw, 36px);
+    font-style: italic;
+}
+
+@media (max-width: 576px) {
+    .final-letter {
+        padding: 22px;
+        line-height: 1.8;
+    }
+}
+
+
+
+/* Smooth scrolling between sections */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Keep the timeline comfortable on mobile */
+@media (max-width: 576px) {
+    .story-section {
+        padding: 70px 15px;
+    }
+
+    .story-timeline {
+        padding: 28px 20px;
+    }
+
+    .timeline-item {
+        padding-left: 28px;
+        padding-bottom: 35px;
+    }
+
+    .timeline-item h3 {
+        font-size: 20px;
+    }
+
+    .timeline-date {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+}
+
+
